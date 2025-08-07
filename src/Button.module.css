@@ -1,0 +1,46 @@
+.btn {
+  position: relative;
+  width: 200px;
+  height: 38px;
+  border-radius: 50px;
+  background: rgb(55, 21, 90);
+  overflow: hidden;
+  --offset: 1.5px;
+  z-index: 1;
+  cursor: pointer;
+
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(transparent 270deg, white, transparent);
+  animation: spin 5s linear infinite;
+  z-index: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1.4) rotate(0turn);
+  }
+
+  100% {
+    transform: scale(1.4) rotate(1turn);
+  }
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: var(--offset);
+  background: #37155a;
+  z-index: 1;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
