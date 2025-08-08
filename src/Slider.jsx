@@ -1,27 +1,17 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import styles from "./Slider.module.css";
 
 function Slider() {
   return (
     <>
-      <hr />
-      <div className={styles.slider}>
-        <div className={styles.track}>
+      <Marquee gradient={false} speed={100} pauseOnHover >
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>
-
-
-          <span className={styles.logo}>LOGO</span>
-          <span className={styles.logo}>LOGO</span>
-          <span className={styles.logo}>LOGO</span>
-          <span className={styles.logo}>LOGO</span>
-          <span className={styles.logo}>LOGO</span>
-        
-        </div>
-      </div>
+       </Marquee>
     </>
   );
 }

@@ -1,46 +1,47 @@
 .btn {
+  margin: 0 auto;
+  padding: 2em;
+  color: #ffffff;
+  font-size: large;
+  width: 250px;
+  background: #131d46;
+  text-align: center;
+  border-radius: 10px;
   position: relative;
-  width: 200px;
-  height: 38px;
-  border-radius: 50px;
-  background: rgb(55, 21, 90);
-  overflow: hidden;
-  --offset: 1.5px;
-  z-index: 1;
   cursor: pointer;
+}
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.btn::after, .btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff0055, #00ffd5, #a300ff, #ffe600, #ff0055);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3.5px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
 }
 
 .btn::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: conic-gradient(transparent 270deg, white, transparent);
-  animation: spin 5s linear infinite;
-  z-index: 0;
+  filter: blur(3px);
+  opacity: 0.7;
 }
 
 @keyframes spin {
-  0% {
-    transform: scale(1.4) rotate(0turn);
+  from {
+    --angle: 0deg;
   }
-
-  100% {
-    transform: scale(1.4) rotate(1turn);
+  to {
+    --angle: 360deg;
   }
 }
-
-.btn::after {
-  content: '';
-  position: absolute;
-  inset: var(--offset);
-  background: #37155a;
-  z-index: 1;
-}
-
-.btn span {
-  position: relative;
-  z-index: 2;
-  color: #ffffff;
-}
-

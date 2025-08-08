@@ -1,33 +1,9 @@
-.slider {
-  overflow: hidden;
-  white-space: nowrap;
-  background: #fff;
-  padding: 20px 0;
-}
-
-.track {
-  display: inline-block;
-  animation: scroll 12s linear infinite;
-}
-
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-
 .logo {
   display: inline-block;
-  margin: 0 30px;
-  font-size: 1.5rem;
+  margin: 10px 30px;
+  font-size: 2rem;
   font-weight: bold;
   color: #000000;
   padding: 30px 60px;
-  background: #ffffff;
+  cursor: pointer;
 }
-

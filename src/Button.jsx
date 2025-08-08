@@ -3,8 +3,8 @@ import styles from './Button.module.css';
 
 function Button(){
   return (
-    <>
-    <button className={styles.btn} > <span> Try it Now </span></button>
+    <><span >
+    <button  className={styles.btn}>Try it Now</button></span>
     </>
   );
 };
