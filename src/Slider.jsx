@@ -5,7 +5,7 @@ import styles from "./Slider.module.css";
 function Slider() {
   return (
     <>
-      <Marquee gradient={false} speed={100} pauseOnHover >
+      <Marquee gradient={false} speed={90} pauseOnHover >
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>
           <span className={styles.logo}>LOGO</span>

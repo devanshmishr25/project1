@@ -10,7 +10,7 @@
   position: relative;
   cursor: pointer;
   border: 0.1px inset rgb(255, 253, 253);
-  
+
 }
 
 @property --angle {
@@ -25,7 +25,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 1) 10deg,rgba(255, 255, 255, 0) 40deg);
+  background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 1) 10deg, rgba(255, 255, 255, 0) 40deg);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -39,7 +39,8 @@
   from {
     --angle: 0deg;
   }
+
   to {
     --angle: 360deg;
   }
-} 
+}
