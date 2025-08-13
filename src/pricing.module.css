@@ -1,0 +1,42 @@
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.head h1 {
+  font-size: 3rem
+}
+
+.head p {
+  color: #000000;
+}
+
+.toggle {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.toggle button {
+  padding: 8px 16px;
+  background-color: #9da6b9;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle button:hover {
+  background: #d1d1d1;
+}
+
+.active {
+  background-color: #153d96;
+  color: rgb(51, 38, 226);
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
