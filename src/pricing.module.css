@@ -1,14 +1,11 @@
 .head {
+  color: white;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .head h1 {
   font-size: 3rem
-}
-
-.head p {
-  color: #000000;
 }
 
 .toggle {
@@ -26,7 +23,7 @@
 }
 
 .toggle button:hover {
-  background: #d1d1d1;
+  background: #564444;
 }
 
 .active {

@@ -15,7 +15,7 @@ function Pricing() {
         "AI Interview",
         "Access to AI Powered Interviews",
       ],
-      highlight: coloured === 0,
+      // highlight: coloured === 0,
       buttonText: "Get Started",
     },
     {
@@ -26,7 +26,7 @@ function Pricing() {
         "Priority Applications",
         "150 credit top-ups",
       ],
-      highlight: coloured === 1,
+      // highlight: coloured === 1,
       buttonText: "Get Started",
     },
     {
@@ -38,7 +38,7 @@ function Pricing() {
         "ATS Checker",
         "300 credit top-ups",
       ],
-      highlight: coloured === 2,
+      // highlight: coloured === 2,
       buttonText: "Get Started",
       badge: "Most Popular",
     },
@@ -50,7 +50,7 @@ function Pricing() {
         "500 credit top-ups",
         "IDOTx Verified Talent Pool",
       ],
-      highlight: coloured === 3,
+      // highlight: coloured === 3,
       buttonText: "Contact Sales",
     },
   ];
@@ -88,7 +88,6 @@ function Pricing() {
             price={plan.price}
             features={plan.features}
             buttonText={plan.buttonText}
-            highlight={plan.highlight}
             onClick={() => setColoured(coloured === index ? null : index)}
           />
         ))}

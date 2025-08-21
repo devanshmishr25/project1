@@ -2,7 +2,6 @@ import styles from "./PricingCard.module.css";
 
 function PricingCard({
   badge,
-  highlight,
   title,
   price,
   features,
@@ -11,7 +10,7 @@ function PricingCard({
 }) {
   return (
     <div
-      className={`${styles.card} ${highlight ? styles.highlight : ""}`}
+      className={styles.card}
       onClick={onClick}
     >
       <p>{badge}</p>
@@ -22,7 +21,7 @@ function PricingCard({
           <li>{feature}</li>
         ))}
       </ul>
-      <button className={highlight ? styles.btnPrimary : styles.btnSecondary}>
+      <button className={styles.btnSecondary}>
         {buttonText}
       </button>
     </div>
